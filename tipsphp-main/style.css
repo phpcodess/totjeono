@@ -1,0 +1,161 @@
+*{
+    font-family: 'AR One Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(200, 195, 195)
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight:700;
+}
+
+.navbar a{
+    position: relative;
+    font-size:18px;
+    color: #9f0e0e;
+    font-weight:500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.hero{
+    margin-top: 100px;
+    padding: 0;
+    height: 8vh;
+    background-color: rgb(224, 179, 94);
+
+}
+.hero h1{
+    text-align: left;
+    color: aliceblue;
+    margin-left: 10px;
+    padding-top: 7px;
+}
+aside p{
+    max-width: 45vw;
+    margin-top: 50px
+}
+aside span{
+    background-color: rgb(14, 151, 220);
+    max-width: 25rem;
+    position: relative;
+    float: right;
+    margin-top: -100px;
+}
+footer{
+margin-top:170px;
+background-color: rgb(160, 155, 155);
+}
+
+footer h3{
+    text-decoration: underline;
+}
+
+footer ul{
+    text-align: center;
+    list-style: none
+}
+
+ul.galery{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+h1.galery{
+    padding-top:100px;
+    text-align: center;
+}
+li.galery{
+    display: inline-block;
+
+}
+
+a.galery{
+    color:black;
+    display: block;
+    text-decoration: none;
+}
+
+.selected.galery a {
+    color: red;
+};
+
+img {
+size: 20px;
+}
+
+.gal-files {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.gal-files li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 20px;
+    font-size: 15px;
+}
+
+.gal-files li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.gal-files li a:hover {
+    color: rgb(14, 125, 14);
+
+}
+
+.gal-image {
+    box-sizing:content-box;
+}
+
+.gal-image li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.gal-image li img {
+    width: 350px;
+    height: 200px;
+    margin: 20px;
+}
+
+
+.selected a {
+    color: rgb(14, 125, 14);
+}
+
+.nselected a {
+    color: black;
+}
